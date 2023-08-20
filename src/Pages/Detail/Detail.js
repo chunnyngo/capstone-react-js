@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { https } from "../../Service/config";
-
+import moment from "moment/moment";
 import { Tabs, Space, Rate, Progress } from "antd";
 
 const onChange = (key) => {
@@ -58,7 +58,8 @@ export default function Detail() {
                 />
                 <div className="pl-5" style={{ marginTop: "60%" }}>
                   <div className="inline-block bg-violet-400 p-2 mb-3 text-white font-bold rounded-lg">
-                    Ngày Khởi Chiếu: {movie.ngayKhoiChieu}
+                    Ngày Khởi Chiếu:
+                    {moment(movie.ngayKhoiChieu).format("DD.MM.YYYY")}
                   </div>
                   <h1 className="text-5xl font-bold text-white ">
                     {movie.tenPhim}

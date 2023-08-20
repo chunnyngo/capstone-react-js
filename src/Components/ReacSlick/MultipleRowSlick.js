@@ -35,7 +35,7 @@ const MultipleRowSlick = (props) => {
   let renderMovieList = () => {
     return props.arrFilm.map((item, index) => {
       return (
-        <div className="mt-1" key={index}>
+        <div className="mt-1 bg-violet-300" key={index}>
           <FilmFlip key={index} item={{ item }} />
         </div>
       );

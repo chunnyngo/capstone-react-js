@@ -15,7 +15,7 @@ export default function ListMovie() {
   //   dependencies
 
   return (
-    <div className=" containerFilm px-2 py-5 mx-auto">
+    <div className=" containerFilm px-2 py-5 mx-auto bg-violet-300">
       <MultipleRowSlick arrFilm={arrFilm} />
     </div>
   );

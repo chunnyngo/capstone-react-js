@@ -1,5 +1,5 @@
 import React from "react";
-
+import moment from "moment/moment";
 import { Tabs } from "antd";
 
 const onChange = (key) => {
@@ -26,7 +26,9 @@ export default function TabMovie(props) {
                   className="bg-violet-400 text-white rounded h-10 leading-10 text-center"
                   key={index}
                 >
-                  {lichChieu.ngayChieuGioChieu}
+                  {moment(lichChieu.ngayChieuGioChieu).format(
+                    "DD/MM/YYYY  -- hh:mm"
+                  )}
                 </div>
               );
             })}
