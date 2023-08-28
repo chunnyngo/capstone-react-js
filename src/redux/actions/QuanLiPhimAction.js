@@ -4,7 +4,7 @@ import { SET_LIST_FILM } from "../constant/Constant";
 export const getFilmAction = () => {
   return (dispatch) => {
     https
-      .get("/api/QuanLyPhim/LayDanhSachPhim/?maNhom=GP09")
+      .get("/api/QuanLyPhim/LayDanhSachPhim/?maNhom=GP08")
       .then((response) => {
         dispatch({
           type: SET_LIST_FILM,

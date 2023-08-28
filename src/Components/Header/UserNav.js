@@ -5,7 +5,7 @@ import { NavLink, useNavigate } from "react-router-dom";
 
 export default function UserNav() {
   let { userLogin } = useSelector((state) => state.quanLiNguoiDungReducer);
-  console.log(userLogin);
+
   let navigate = useNavigate();
 
   let handleLogout = () => {

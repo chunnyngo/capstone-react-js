@@ -7,6 +7,7 @@ import HomeLayout from "./Pages/HomePage/HomeLayout/HomeLayout";
 import Contact from "./Pages/contact/Contact";
 import News from "./Pages/news/News";
 import Detail from "./Pages/Detail/Detail";
+import CheckOut from "./Pages/checkOut/CheckOut";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
           path="/Detail/:id"
           element={<HomeLayout contentPage={<Detail />} />}
         />
+        <Route path="/Checkout/:id" element={<CheckOut />} />
       </Routes>
     </BrowserRouter>
   );

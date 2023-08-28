@@ -1,4 +1,9 @@
-import { SET_FILM_DC, SET_FILM_SC, SET_LIST_FILM } from "../constant/Constant";
+import {
+  SET_FILM_DC,
+  SET_FILM_SC,
+  SET_LIST_FILM,
+  SET_CHI_TIET_PHIM,
+} from "../constant/Constant";
 
 const stateDefault = {
   arrFilm: [
@@ -45,6 +50,10 @@ export const QuanLiPhimReducer = (state = stateDefault, action) => {
       state.arrFilm = state.arrFilmDefault.filter(
         (film) => film.sapChieu === state.sapChieu
       );
+      return { ...state };
+    }
+    case SET_CHI_TIET_PHIM: {
+      state.filmDetail = action.filmDetail;
       return { ...state };
     }
     default:
