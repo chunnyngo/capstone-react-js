@@ -5,3 +5,5 @@ export const SET_FILM_SC = "SET_FILM_SC";
 export const SET_CHI_TIET_PHIM = "SET_CHI_TIET_PHIM";
 export const SET_HE_THONG_RAP_CHIEU = "SET_HE_THONG_RAP_CHIEU";
 export const SET_LOGIN = "SET_LOGIN";
+export const SET_CHI_TIET_PHONG_VE = "SET_CHI_TIET_PHONG_VE";
+export const DAT_VE = "DAT_VE";
